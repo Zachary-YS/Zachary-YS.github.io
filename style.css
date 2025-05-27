@@ -57,14 +57,6 @@ a:hover {
     gap: 20px; /* 使用 gap 属性设置导航链接之间的间距 */
 }
 
-/* 如果你的浏览器不支持 gap (较旧版本)，可以使用 margin-right: */
-/* .navbar-right ul li {
-    margin-right: 20px;
-}
-.navbar-right ul li:last-child {
-    margin-right: 0;
-} */
-
 
 .navbar-right ul li a {
     color: #555;
@@ -79,19 +71,12 @@ a:hover {
 
 .navbar-icons {
     display: flex;
-    align-items: center;
+    align-items: left;
     margin-left: 20px; /* 图标区域与导航链接的间距 */
     gap: 15px; /* 图标之间的间距 */
 }
 
-/* 如果你的浏览器不支持 gap (较旧版本)，可以使用 margin-left: */
-/* .navbar-icons i {
-    font-size: 1.2em;
-    color: #555;
-    margin-left: 15px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-} */
+
 .navbar-icons i {
     font-size: 1.2em;
     color: #555;
@@ -123,8 +108,8 @@ a:hover {
 }
 
 .profile-picture {
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
