@@ -1,0 +1,266 @@
+/* Basic Reset & Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: #007bff; /* Blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center; /* Center the content within the navbar */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.navbar-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-right ul li {
+    margin-right: 20px;
+}
+
+.navbar-right ul li a {
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-right ul li a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.navbar-icons i {
+    font-size: 1.2em;
+    color: #555;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar-icons i:hover {
+    color: #007bff;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    padding-top: 40px;
+    gap: 40px; /* Space between sidebar and content area */
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 0 0 300px; /* Fixed width for the sidebar */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    height: fit-content; /* Adjust height to content */
+}
+
+.profile-picture {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #eee; /* Light border around image */
+}
+
+.profile-card h2 {
+    margin: 10px 0 5px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.profile-card .title {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.profile-card .affiliation {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    font-size: 1.8em;
+    color: #555;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+/* Content Area */
+.content-area {
+    flex-grow: 1; /* Takes up remaining space */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.content-area section {
+    margin-bottom: 30px;
+}
+
+.content-area h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.content-area ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content-area ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px; /* Space for bullet point */
+}
+
+.content-area ul li::before {
+    content: '•'; /* Custom bullet point */
+    color: #007bff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2em;
+}
+
+/* Education Section Specific Styles */
+.education-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.education-item i {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-right: 15px;
+    margin-top: 2px; /* Align icon with text better */
+}
+
+.education-item p {
+    margin: 0;
+}
+
+.education-item p strong {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .main-content {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .sidebar {
+        flex: none; /* Remove fixed width */
+        width: auto; /* Auto width */
+        margin-bottom: 20px;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-right {
+        margin-top: 15px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar-right ul {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .navbar-right ul li {
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+
+    .navbar-icons {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-left h1 {
+        font-size: 1.2em;
+    }
+
+    .navbar-right ul li {
+        margin-right: 10px;
+        font-size: 0.9em;
+    }
+
+    .social-links a {
+        font-size: 1.5em;
+        margin: 0 5px;
+    }
+}
