@@ -28,20 +28,25 @@ a:hover {
     background-color: #fff;
     padding: 15px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: center; /* Center the content within the navbar */
+    /* 移除了 justify-content: center; 因为它会使 .container 居中，而不是 .container 内部的元素分散 */
 }
 
 .navbar .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* 确保左侧 (姓名) 和右侧 (导航链接+图标) 分散对齐 */
+    align-items: center; /* 垂直居中对齐 */
 }
 
 .navbar-left h1 {
     margin: 0;
     font-size: 1.5em;
     color: #333;
+    line-height: 1.2; /* 调整行高，使其与导航链接更好地对齐 */
+}
+
+.navbar-right {
+    display: flex; /* 让导航链接 ul 和图标 div 水平排列 */
+    align-items: center; /* 垂直居中对齐 */
 }
 
 .navbar-right ul {
@@ -49,11 +54,17 @@ a:hover {
     margin: 0;
     padding: 0;
     display: flex;
+    gap: 20px; /* 使用 gap 属性设置导航链接之间的间距 */
 }
 
-.navbar-right ul li {
+/* 如果你的浏览器不支持 gap (较旧版本)，可以使用 margin-right: */
+/* .navbar-right ul li {
     margin-right: 20px;
 }
+.navbar-right ul li:last-child {
+    margin-right: 0;
+} */
+
 
 .navbar-right ul li a {
     color: #555;
@@ -69,16 +80,25 @@ a:hover {
 .navbar-icons {
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 20px; /* 图标区域与导航链接的间距 */
+    gap: 15px; /* 图标之间的间距 */
 }
 
-.navbar-icons i {
+/* 如果你的浏览器不支持 gap (较旧版本)，可以使用 margin-left: */
+/* .navbar-icons i {
     font-size: 1.2em;
     color: #555;
     margin-left: 15px;
     cursor: pointer;
     transition: color 0.3s ease;
+} */
+.navbar-icons i {
+    font-size: 1.2em;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
+
 
 .navbar-icons i:hover {
     color: #007bff;
@@ -211,21 +231,21 @@ a:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 900px) {
+@media (max-width: 900px) { /* 当屏幕宽度小于等于900px时应用以下样式 */
     .main-content {
-        flex-direction: column;
+        flex-direction: column; /* 主内容区变为垂直堆叠 */
         padding-top: 20px;
     }
 
     .sidebar {
-        flex: none; /* Remove fixed width */
-        width: auto; /* Auto width */
+        flex: none; /* 移除flex属性，使其不再固定宽度 */
+        width: auto; /* 宽度自适应 */
         margin-bottom: 20px;
     }
 
     .navbar .container {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* 导航栏内容垂直堆叠 */
+        align-items: flex-start; /* 左对齐 */
     }
 
     .navbar-right {
@@ -235,7 +255,7 @@ a:hover {
     }
 
     .navbar-right ul {
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* 导航项换行 */
         margin-bottom: 10px;
     }
 
@@ -249,7 +269,7 @@ a:hover {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) { /* 当屏幕宽度小于等于600px时应用以下样式 (更小的屏幕) */
     .navbar-left h1 {
         font-size: 1.2em;
     }
