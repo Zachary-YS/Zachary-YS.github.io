@@ -22,8 +22,7 @@ const About = () => {
                 <p>
                   My research journey spans across multiple cutting-edge domains: from developing
                   reinforcement learning algorithms for <span className="text-primary font-semibold">robotics</span> to optimizing <span className="text-primary font-semibold">AI infrastructure</span> for
-                  large language models, and exploring the fascinating intersection of AI and
-                   <span className="text-primary font-semibold">cognitive neuroscience</span>.
+                  large language models, and exploring the fascinating intersection of AI and <span className="text-primary font-semibold">cognitive neuroscience</span>.
                 </p>
                 <p>
                   Beyond academics, I'm an <span className="text-primary font-semibold">athlete</span> at heart, competing in track and field events
