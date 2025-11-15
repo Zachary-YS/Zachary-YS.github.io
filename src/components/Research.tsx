@@ -18,7 +18,7 @@ const researchProjects = [
     title: "AI Infrastructure",
     role: "Research Intern",
     period: "Oct 2024 - Jun 2025",
-    advisor: "Prof. Kaisheng Ma, Institute for Interdisciplinary Information Sciences",
+    advisor: "Institute for Interdisciplinary Information Sciences",
     icon: Server,
     color: "secondary",
     description: [

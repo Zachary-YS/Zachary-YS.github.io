@@ -70,7 +70,7 @@ const Hero = () => {
           {/* Subtitle */}
           <div className="space-y-4">
             <p className="text-2xl md:text-3xl text-muted-foreground font-light">
-              AI Researcher & Engineer
+              AI Researcher
             </p>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               Exploring the frontiers of Robotics, Reinforcement Learning, and AI Infrastructure
@@ -78,22 +78,23 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Stats */}
-          <div className="flex flex-wrap justify-center gap-8 pt-8">
-            <div className="glass rounded-2xl px-8 py-4 glow">
-              <div className="text-3xl font-bold text-primary">3+</div>
-              <div className="text-sm text-muted-foreground">Research Projects</div>
-            </div>
-            <div className="glass rounded-2xl px-8 py-4 glow">
-              <div className="text-3xl font-bold text-secondary">10+</div>
-              <div className="text-sm text-muted-foreground">Awards</div>
-            </div>
-            <div className="glass rounded-2xl px-8 py-4 glow">
-              <div className="text-3xl font-bold text-accent">GPA 3.9+</div>
-              <div className="text-sm text-muted-foreground">Academic Excellence</div>
-            </div>
-          </div>
-
+{/* Stats */}
+{/*
+<div className="flex flex-wrap justify-center gap-8 pt-8">
+  <div className="glass rounded-2xl px-8 py-4 glow">
+    <div className="text-3xl font-bold text-primary">3+</div>
+    <div className="text-sm text-muted-foreground">Research Projects</div>
+  </div>
+  <div className="glass rounded-2xl px-8 py-4 glow">
+    <div className="text-3xl font-bold text-secondary">10+</div>
+    <div className="text-sm text-muted-foreground">Awards</div>
+  </div>
+  <div className="glass rounded-2xl px-8 py-4 glow">
+    <div className="text-3xl font-bold text-accent">GPA 3.9+</div>
+    <div className="text-sm text-muted-foreground">Academic Excellence</div>
+  </div>
+</div>
+*/}
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 justify-center pt-8">
             <Button
