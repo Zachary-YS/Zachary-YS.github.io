@@ -6,7 +6,7 @@ const researchProjects = [
     title: "RL for Robotics",
     role: "Independent Researcher",
     period: "May 2025 - Present",
-    icon: Brain,
+    icon: Microscope,
     color: "primary",
     description: [
       "Researching VLA models, IL data augmentation, and training framework optimization",
@@ -33,7 +33,7 @@ const researchProjects = [
     role: "Project Researcher",
     period: "Aug 2025",
     advisor: "School of Psychological and Cognitive Sciences, Peking University",
-    icon: Microscope,
+    icon: Brain,
     color: "accent",
     description: [
       "Independently designed and developed a computational framework",
