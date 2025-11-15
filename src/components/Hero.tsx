@@ -119,7 +119,7 @@ const Hero = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex gap-6 justify-center pt-3">
+          <div className="flex gap-6 justify-center pt-0">
             <a
               href="mailto:yingchen23@mails.tsinghua.edu.cn"
               className="glass rounded-full p-4 hover:glow smooth-transition hover:scale-110"
