@@ -36,9 +36,9 @@ const Contact = () => {
             </a>
 
             {/* Phone */}
-            <div className="glass p-8 rounded-2xl border-border animate-slide-in-right">
+            <div className="glass p-8 rounded-2xl smooth-transition hover:glow border-border group animate-slide-in-right">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 smooth-transition">
                   <Phone className="w-6 h-6 text-secondary" />
                 </div>
                 <div>
@@ -49,9 +49,9 @@ const Contact = () => {
             </div>
 
             {/* WeChat */}
-            <div className="glass p-8 rounded-2xl border-border animate-slide-in-left" style={{ animationDelay: "0.1s" }}>
+            <div className="glass p-8 rounded-2xl smooth-transition hover:glow border-border group animate-slide-in-left" style={{ animationDelay: "0.1s" }}>
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 smooth-transition">
                   <MessageCircle className="w-6 h-6 text-accent" />
                 </div>
                 <div>
@@ -62,9 +62,9 @@ const Contact = () => {
             </div>
 
             {/* WhatsApp */}
-            <div className="glass p-8 rounded-2xl border-border animate-slide-in-right" style={{ animationDelay: "0.1s" }}>
+            <div className="glass p-8 rounded-2xl smooth-transition hover:glow border-border group animate-slide-in-right" style={{ animationDelay: "0.1s" }}>
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-electric-purple/10 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-electric-purple/10 flex items-center justify-center group-hover:bg-electric-purple/20 smooth-transition">
                   <MessageCircle className="w-6 h-6 text-electric-purple" />
                 </div>
                 <div>
@@ -76,9 +76,9 @@ const Contact = () => {
           </div>
 
           {/* Location */}
-          <div className="glass p-8 rounded-2xl border-border mb-12 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <div className="glass p-8 rounded-2xl smooth-transition hover:glow border-border group mb-12 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-electric-cyan/10 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-xl bg-electric-cyan/10 flex items-center justify-center group-hover:bg-electric-cyan/20 smooth-transition">
                 <MapPin className="w-6 h-6 text-electric-cyan" />
               </div>
               <div>
