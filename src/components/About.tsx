@@ -15,18 +15,18 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-lg text-foreground/90 leading-relaxed">
                 <p>
-                  I'm a passionate AI researcher and engineer currently pursuing my Bachelor's degree
+                Hi, <span className="text-primary font-semibold">I'm Zhang YingSheng (张颖盛)</span>. A passionate AI researcher and engineer currently pursuing my Bachelor's degree
                   in Automation at <span className="text-primary font-semibold">Tsinghua University</span>,
                   where I'm a proud member of the General Artificial Intelligence Experimental Class.
                 </p>
                 <p>
                   My research journey spans across multiple cutting-edge domains: from developing
-                  reinforcement learning algorithms for robotics to optimizing AI infrastructure for
+                  reinforcement learning algorithms for <span className="text-primary font-semibold"></span>robotics</span> to optimizing <span className="text-primary font-semibold"></span>AI infrastructure</span> for
                   large language models, and exploring the fascinating intersection of AI and
-                  cognitive neuroscience.
+                  <span className="text-primary font-semibold"></span>cognitive neuroscience</span>.
                 </p>
                 <p>
-                  Beyond academics, I'm an athlete at heart, competing in track and field events
+                  Beyond academics, I'm an <span className="text-primary font-semibold"></span>athlete</span> at heart, competing in track and field events
                   at the university level. This balance between mental and physical challenges
                   drives my holistic approach to problem-solving and innovation.
                 </p>
