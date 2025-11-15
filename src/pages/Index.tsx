@@ -18,7 +18,6 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 border-t border-border">
         <div className="container mx-auto px-6 text-center text-sm text-muted-foreground">
-          <p>© 2025 Yingsheng Zhang. Built with passion and cutting-edge tech.</p>
         </div>
       </footer>
     </div>
